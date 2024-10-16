@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"m":"com.appointmentscheduler.appointmentschedulingapp","l":"com.appointmentscheduler.appointmentschedulingapp"},{"m":"com.appointmentscheduler.appointmentschedulingapp","l":"com.appointmentscheduler.appointmentschedulingapp.models"}]

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="395.0" minWidth="424.0" prefHeight="457.0" prefWidth="1078.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appointmentscheduler.appointmentschedulingapp.CustomerMainController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="498.0" layoutY="14.999999999999979" text="Customers" textAlignment="CENTER" AnchorPane.leftAnchor="498.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="14.999999999999979">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus" layoutX="36.0" layoutY="54.0" prefHeight="19.0" prefWidth="1011.0" AnchorPane.leftAnchor="36.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="54.0" />
+      <TableView fx:id="tblviewCustomers" layoutX="15.0" layoutY="488.0" prefHeight="260.0" prefWidth="1039.0" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="82.0">
+        <columns>
+          <TableColumn fx:id="tblColID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tblColName" prefWidth="138.4000701904297" text="Name" />
+            <TableColumn fx:id="tblColAddress" prefWidth="129.60003662109375" text="Address" />
+            <TableColumn fx:id="tblColPostalCode" prefWidth="82.66668701171875" text="Postal Code" />
+            <TableColumn fx:id="tblColPhone" prefWidth="89.33328247070312" text="Phone" />
+            <TableColumn fx:id="tblColCreateDate" prefWidth="88.26666259765625" text="Create Date" />
+            <TableColumn fx:id="tblColCreatedBy" prefWidth="115.9998779296875" text="Created By" />
+            <TableColumn fx:id="tblColLastUpdate" prefWidth="92.5333251953125" text="Last Update" />
+            <TableColumn fx:id="tblColUpdatedBy" prefWidth="130.40008544921875" text="Updated By" />
+            <TableColumn fx:id="tblColDivisionID" prefWidth="113.86651611328125" text="Division ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnClose" layoutX="923.9999999999999" layoutY="358.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="38.0" prefWidth="121.0" text="Close" AnchorPane.bottomAnchor="31.600000000000023" AnchorPane.rightAnchor="32.40000000000009" />
+      <Button fx:id="btnAddCustomer" layoutX="33.0" layoutY="440.0" minWidth="100.0" onAction="#onAddCustomerButtonClick" prefHeight="35.0" prefWidth="116.0" text="Add Customer" AnchorPane.bottomAnchor="31.6" AnchorPane.leftAnchor="33.0">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnEditCustomer" layoutX="160.0" layoutY="438.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#onEditCustomerButtonClick" prefHeight="38.0" prefWidth="118.0" text="Edit Customer" AnchorPane.bottomAnchor="31.6" AnchorPane.leftAnchor="160.0" />
+      <Button fx:id="btnDeleteCustomer" layoutX="291.0" layoutY="439.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#onDeleteCustomerButtonClick" prefHeight="38.0" prefWidth="121.0" text="Delete Customer" AnchorPane.bottomAnchor="31.6" AnchorPane.leftAnchor="291.0" />
+      <Separator layoutX="4.0" layoutY="47.999999999999986" prefHeight="0.0" prefWidth="1073.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="0.40000000000009095" AnchorPane.topAnchor="47.999999999999986" />
+   </children>
+</AnchorPane>

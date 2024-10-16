@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane centerShape="false" minHeight="395.0" minWidth="424.0" prefHeight="502.0" prefWidth="1356.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblStatus" layoutX="28.0" layoutY="71.0" prefHeight="18.0" prefWidth="1198.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="71.0" />
+      <TableView fx:id="tblviewAppointments" layoutX="15.0" layoutY="110.80000000000001" prefHeight="303.0" prefWidth="1319.0" AnchorPane.bottomAnchor="88.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="110.80000000000001">
+        <columns>
+            <TableColumn fx:id="tblColID" prefWidth="58.00000190734863" text="ID" />
+            <TableColumn fx:id="tblColTitle" prefWidth="170.39998626708984" text="Title" />
+            <TableColumn fx:id="tblColDescription" prefWidth="230.19998168945312" text="Description" />
+            <TableColumn fx:id="tblColLocation" prefWidth="110.80001831054688" text="Location" />
+            <TableColumn fx:id="tblColContact" prefWidth="160.800048828125" text="Contact ID" />
+            <TableColumn fx:id="tblColType" prefWidth="120.20004272460938" text="Type" />
+            <TableColumn fx:id="tblColStart" prefWidth="151.39999389648438" text="Start DateTime" />
+            <TableColumn fx:id="tblColEnd" prefWidth="157.60003662109375" text="End DateTime" />
+            <!--
+            <TableColumn fx:id="tblColCreateDate" prefWidth="88.79998779296875" text="Create Date" />
+            <TableColumn fx:id="tblColLastUpdate" prefWidth="106.0" text="Last Update" />
+            <TableColumn fx:id="tblColCreatedBy" prefWidth="85.5999755859375" text="Created By" />
+            <TableColumn fx:id="tblColUpdatedBy" prefWidth="76.5999755859375" text="Updated By" />
+            -->
+            <TableColumn fx:id="tblColCustomer" prefWidth="84.39996337890625" text="Customer ID" />
+            <TableColumn fx:id="tblColUser" prefWidth="72.7999267578125" text="User ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnClose" layoutX="1247.0" layoutY="65.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#onCloseButtonClick" prefHeight="30.0" prefWidth="83.0" text="Close" AnchorPane.rightAnchor="25.799999999999955" AnchorPane.topAnchor="65.0" />
+      <Button fx:id="btnAddAppointment" layoutX="33.0" layoutY="495.00000000000006" minWidth="100.0" onAction="#onAddAppointmentButtonClick" prefHeight="35.0" prefWidth="160.0" text="Add Appointment" AnchorPane.bottomAnchor="32.6" AnchorPane.leftAnchor="33.0">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </Button>
+      <Button fx:id="btnEditAppointment" layoutX="214.0" layoutY="430.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#onEditAppointmentButtonClick" prefHeight="38.0" prefWidth="160.0" text="Edit Appointment" AnchorPane.bottomAnchor="32.6" AnchorPane.leftAnchor="214.0" />
+      <Button fx:id="btnDeleteAppointment" layoutX="396.0" layoutY="431.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#onDeleteAppointmentButtonClick" prefHeight="38.0" prefWidth="160.0" text="Delete Appointment" AnchorPane.bottomAnchor="32.6" AnchorPane.leftAnchor="396.0" />
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="4.0" prefHeight="26.0" prefWidth="1350.0" text="Appointments" textAlignment="CENTER" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="7.599999999999909" AnchorPane.topAnchor="4.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="2.0" layoutY="53.0" prefHeight="0.0" prefWidth="1073.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.400000000000091" AnchorPane.topAnchor="53.0" />
+      <Button fx:id="btnViewCustomers" layoutX="1157.0" layoutY="427.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#onViewCustomerBtnClick" prefHeight="45.0" prefWidth="160.0" text="View Customers" AnchorPane.bottomAnchor="32.6" AnchorPane.rightAnchor="39.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReports" layoutX="973.0" layoutY="426.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#onReportsButtonClick" prefHeight="45.0" prefWidth="160.0" text="Reports" AnchorPane.bottomAnchor="32.6" AnchorPane.rightAnchor="223.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="rbtnMonthFilter" layoutX="185.0" layoutY="71.0" mnemonicParsing="false" onAction="#filterByMonth" text="Month" />
+      <RadioButton fx:id="rbtnWeekFilter" layoutX="121.0" layoutY="71.0" mnemonicParsing="false" onAction="#filterByWeek" text="Week" />
+      <Label layoutX="54.0" layoutY="71.0" text="View By " />
+      <ComboBox fx:id="cbxWeekMonthFilter" disable="true" layoutX="284.0" layoutY="67.0" prefHeight="26.0" prefWidth="209.0" promptText="Select item" />
+     </children>
+</AnchorPane>

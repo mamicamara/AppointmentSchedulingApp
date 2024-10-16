@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane centerShape="false" minHeight="395.0" minWidth="424.0" prefHeight="564.0" prefWidth="1037.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appointmentscheduler.appointmentschedulingapp.ReportsController">
+   <children>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="8.0" prefHeight="26.0" prefWidth="1018.0" text="Reports" textAlignment="CENTER" textFill="#2e4fbc" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="lblStatus" layoutX="20.0" layoutY="48.0" prefHeight="18.0" prefWidth="550.0" text="Status" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="467.0" AnchorPane.topAnchor="48.0" />
+
+      <ComboBox fx:id="cbxConsultants" layoutX="722.0" layoutY="38.0" prefHeight="26.0" prefWidth="274.0" AnchorPane.leftAnchor="722.0" AnchorPane.topAnchor="38.0" />
+
+      <TableView fx:id="tblviewSchedules" layoutX="14.0" layoutY="79.0" prefHeight="195.0" prefWidth="992.0" AnchorPane.bottomAnchor="290.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="79.0">
+         <columns>
+            <TableColumn fx:id="tblColID" prefWidth="64.00001335144043" text="ID" />
+            <TableColumn fx:id="tblColTitle" prefWidth="213.19998168945312" text="Title" />
+            <TableColumn fx:id="tblColType" prefWidth="128.39999389648438" text="Type" />
+            <TableColumn fx:id="tblColDescription" prefWidth="186.39999389648438" text="Description" />
+            <TableColumn fx:id="tblColStart" prefWidth="144.20001220703125" text="Start Datetime" />
+            <TableColumn fx:id="tblColEnd" prefWidth="129.79998779296875" text="End Datetime" />
+            <TableColumn fx:id="tblColCustomerID" prefWidth="148.60003662109375" text="Customer ID" />
+         </columns>
+      </TableView>
+
+      <Separator layoutX="14.0" layoutY="290.0" prefHeight="3.0" prefWidth="992.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="290.0" />
+
+      <TableView fx:id="tblviewAppointments" layoutX="29.0" layoutY="308.0" prefHeight="195.0" prefWidth="520.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="308.0">
+        <columns>
+          <TableColumn fx:id="tblColAppointmentMonth" prefWidth="157.99999618530273" text="Appointment Month" />
+           <TableColumn fx:id="tblColAppointmentType" prefWidth="165.6000213623047" text="Appointment Type" />
+          <TableColumn fx:id="tblColTotalAppointments" prefWidth="195.19998168945312" text="Total Appointments" />
+        </columns>
+      </TableView>
+
+      <Separator layoutX="610.0" layoutY="290.0" orientation="VERTICAL" prefHeight="205.0" prefWidth="3.0" />
+
+      <TableView fx:id="tblviewDivisionCustomers" layoutX="743.0" layoutY="308.0" prefHeight="195.0" prefWidth="354.0" AnchorPane.bottomAnchor="61.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="308.0">
+         <columns>
+            <TableColumn fx:id="tblColDivision" prefWidth="192.59998166561127" text="Division" />
+            <TableColumn fx:id="tblColTotalCustomers" prefWidth="157.0" text="Total Customers" />
+         </columns>
+      </TableView>
+
+      <Button fx:id="btnBack" layoutX="832.0" layoutY="458.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="30.0" prefWidth="83.0" text="Back" AnchorPane.bottomAnchor="13.600000000000001" AnchorPane.rightAnchor="39.8" />
+      <Label layoutX="624.0" layoutY="42.0" text="Select a contact" />
+
+   </children>
+</AnchorPane>

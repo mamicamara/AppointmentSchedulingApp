@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="395.0" minWidth="424.0" prefHeight="395.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appointmentscheduler.appointmentschedulingapp.LoginController">
+   <children>
+      <Label fx:id="lblTitle" alignment="CENTER" layoutX="9.0" layoutY="29.0" prefHeight="26.0" prefWidth="506.0" text="Login" textAlignment="CENTER" AnchorPane.topAnchor="29.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblStatus" alignment="CENTER" layoutX="45.0" layoutY="331.0" prefHeight="32.0" prefWidth="441.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="331.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUsername" layoutX="81.0" layoutY="125.0" text="Username" AnchorPane.topAnchor="125.0" />
+      <TextField fx:id="tbxUsername" layoutX="80.0" layoutY="144.0" minWidth="265.0" prefHeight="26.0" prefWidth="263.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="78.39999999999998" AnchorPane.topAnchor="144.0">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </TextField>
+      <Label fx:id="lblPassword" layoutX="83.0" layoutY="182.0" text="Password" AnchorPane.topAnchor="182.0" />
+      <PasswordField fx:id="pbxPassword" layoutX="81.0" layoutY="201.0" minWidth="265.0" prefHeight="26.0" prefWidth="265.0" AnchorPane.leftAnchor="81.0" AnchorPane.rightAnchor="77.39999999999998" AnchorPane.topAnchor="201.0">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </PasswordField>
+       <Button fx:id="btnLogin" layoutX="349.0" layoutY="267.0" minWidth="100.0" onAction="#onLoginButtonClick" prefHeight="41.0" prefWidth="100.0" text="Login" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="267.0">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </Button>
+      <Label fx:id="lblTimePrefix" alignment="CENTER_RIGHT" layoutX="81.0" layoutY="85.0" prefHeight="26.0" prefWidth="200.0" text="Your Location " textAlignment="RIGHT" textFill="#157e9c" AnchorPane.topAnchor="85.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblLocation" layoutX="290.0" layoutY="85.0" prefHeight="26.0" prefWidth="243.0" textFill="#157e9c">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

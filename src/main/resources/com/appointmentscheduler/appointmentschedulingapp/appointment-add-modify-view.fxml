@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="395.0" minWidth="424.0" prefHeight="605.0" prefWidth="526.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="30.0" prefHeight="26.0" prefWidth="452.0" text="Add/Edit AppointmentD" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAppointmentD" layoutX="56.0" layoutY="91.0" text="Appointment ID" AnchorPane.leftAnchor="56.99999999999997" AnchorPane.topAnchor="91.0" />
+      <TextField fx:id="tbxAppointmentID" editable="false" layoutX="149.0" layoutY="84.0" minHeight="28.0" minWidth="265.0" prefHeight="28.0" prefWidth="268.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="84.0">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="56.99999999999997" layoutY="125.0" text="Title" AnchorPane.leftAnchor="56.99999999999997" AnchorPane.topAnchor="125.0" />
+      <TextField fx:id="tbxTitle" layoutX="149.0" layoutY="118.0" minHeight="28.0" minWidth="265.0" prefHeight="28.0" prefWidth="268.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="118.0">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="56.99999999999997" layoutY="160.0" text="Description" AnchorPane.leftAnchor="56.99999999999997" AnchorPane.topAnchor="160.0" />
+      <TextField fx:id="tbxDescription" layoutX="149.0" layoutY="153.0" minHeight="28.0" minWidth="265.0" prefHeight="28.0" prefWidth="268.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="153.0">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="56.99999999999997" layoutY="195.0" text="Location" AnchorPane.leftAnchor="56.99999999999997" AnchorPane.topAnchor="195.0" />
+      <TextField fx:id="tbxLocation" layoutX="149.0" layoutY="188.0" minHeight="28.0" minWidth="265.0" prefHeight="28.0" prefWidth="268.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="188.0">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="56.99999999999997" layoutY="232.0" text="Type" AnchorPane.leftAnchor="56.99999999999997" />
+      <TextField fx:id="tbxType" layoutX="149.0" layoutY="223.0" minHeight="28.0" minWidth="265.0" prefHeight="28.0" prefWidth="268.0" AnchorPane.leftAnchor="149.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="223.0">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </TextField>
+      <Label layoutX="57.0" layoutY="267.0" text="Start " />
+      <Label layoutX="56.0" layoutY="339.0" text="End" />
+      <Label layoutX="56.0" layoutY="415.0" text="Customer" />
+      <ComboBox fx:id="cbxCustomer" layoutX="150.0" layoutY="406.0" minHeight="28.0" prefHeight="28.0" prefWidth="321.0" />
+      <Label layoutX="57.0" layoutY="449.0" text="User" />
+      <ComboBox fx:id="cbxUser" layoutX="151.0" layoutY="440.0" minHeight="28.0" prefHeight="28.0" prefWidth="321.0" />
+      <Label layoutX="56.0" layoutY="485.0" text="Contact" AnchorPane.leftAnchor="56.0" AnchorPane.topAnchor="485.0" />
+      <ComboBox fx:id="cbxContact" layoutX="150.0" layoutY="476.0" minHeight="28.0" prefHeight="28.0" prefWidth="268.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="476.0" />
+      <Button fx:id="btnCancel" layoutX="236.0" layoutY="522.0" minWidth="100.0" onAction="#onCancelButtonClick" prefHeight="26.0" prefWidth="100.0" text="Cancel">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </Button>
+       <Button fx:id="btnSave" layoutX="370.0" layoutY="521.0" minWidth="100.0" onAction="#onSaveButtonClick" prefHeight="26.0" prefWidth="100.0" text="Save" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="521.0">
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </Button>
+      <Label fx:id="lblStatus" layoutX="17.0" layoutY="404.0" prefHeight="26.0" prefWidth="427.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="564.0" />
+      <DatePicker fx:id="dpStart" layoutX="149.0" layoutY="258.0" minHeight="28.0" prefHeight="28.0" prefWidth="321.0" showWeekNumbers="true" />
+      <DatePicker fx:id="dpEnd" layoutX="150.0" layoutY="334.0" minHeight="28.0" prefHeight="28.0" prefWidth="322.0" showWeekNumbers="true" />
+      <Label layoutX="151.0" layoutY="299.0" text="HH:" />
+      <ComboBox fx:id="cbxStartHour" layoutX="173.0" layoutY="294.0" minHeight="28.0" prefHeight="28.0" prefWidth="70.0" />
+      <ComboBox fx:id="cbxStartMin" layoutX="288.0" layoutY="294.0" minHeight="28.0" prefHeight="28.0" prefWidth="70.0" />
+      <Label layoutX="262.0" layoutY="299.0" text="MM:" />
+      <ComboBox fx:id="cbxStartSec" layoutX="399.0" layoutY="294.0" minHeight="28.0" prefHeight="28.0" prefWidth="70.0" />
+      <Label layoutX="379.0" layoutY="299.0" text="SS:" />
+      <Label layoutX="152.0" layoutY="375.0" text="HH:" />
+      <ComboBox fx:id="cbxEndHour" layoutX="174.0" layoutY="370.0" minHeight="28.0" prefHeight="28.0" prefWidth="70.0" />
+      <ComboBox fx:id="cbxEndMin" layoutX="289.0" layoutY="370.0" minHeight="28.0" prefHeight="28.0" prefWidth="70.0" />
+      <Label layoutX="263.0" layoutY="375.0" text="MM:" />
+      <ComboBox fx:id="cbxEndSec" layoutX="400.0" layoutY="370.0" minHeight="28.0" prefHeight="28.0" prefWidth="70.0" />
+      <Label layoutX="380.0" layoutY="375.0" text="SS:" />
+   </children>
+</AnchorPane>
